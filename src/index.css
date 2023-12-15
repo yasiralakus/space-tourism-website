@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Bellefair&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li, summary { list-style: none;}
+
+/* hazır kodlarım */
+
+.container {
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+
+
+/* header nav css start */
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 0 0 55px;
+}
+
+.header-nav {
+    padding: 0 167px 0 123px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    gap: 50px;
+    & a {
+        display: inline-block;
+        padding: 38px 0;
+        color: #FFF;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2.7px;
+    } & span {
+            font-weight: 700;
+    }
+}
+
+.active {
+    border-bottom: 1px solid #fff !important;
+}
+
+/* header nav css end */
+
+/* home page css start */
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/bg.jpg) ;
+    background-size: cover;
+}
+
+.home-main {
+    display: flex;
+    gap: 391px;
+    & img {
+        width: 274px;
+        height: 274px;
+        margin-top: 359px;
+    }
+}
+
+.leftSide {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 275px;
+    margin-left: 118px;
+    & h5 {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.725px;
+    }
+    & h1 {
+        color: #FFF;
+        font-family: 'Bellefair';
+        font-size: 150px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    & p {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+    }
+}
+
+/* home page css end */
+
+/* destination page css start */
+
+.destination-container {
+    background-image: url(/img/dest-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.destination-main {
+    & header {
+        margin-left: 166px;
+        margin-top: 76px;
+        display: flex;
+        gap: 28px;
+        color: #FFF;
+        font-family: 'Barlow Condensed';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.725px;
+    } & span {
+            color: #FFF;
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            font-weight: 700;
+            opacity: 0.25;
+    }
+}
+
+.destination-content {
+    display: flex;
+    gap: 158px;
+    & img {
+        width: 445px;
+        height: 445px;
+        margin-left: 230px;
+        margin-top: 97px;
+    }
+}
+
+.contents {
+    width: 445px;
+    margin-top: 64px;
+    & ul {
+        display: flex;
+        gap: 35px;
+        margin-bottom: 37px;
+    } & a {
+            color: #D0D6F9;
+            font-family: 'Barlow Condensed';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.7px;
+            display: inline-block;
+            padding: 12px 0;
+    }
+    & h2 {
+        color: #FFF;
+        font-family: 'Bellefair';
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 14px;
+    }
+    & p {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+        margin-bottom: 83px;
+    }
+}
+
+.contents-active {
+    border-bottom: 1px solid #fff;
+}
+
+.contents-block {
+    display: flex;
+    gap: 80px;
+    & p {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.362px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    } & span {
+            color: #FFF;
+            font-family: 'Bellefair';
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 1;
+    }
+}
+
+/* destination page css end */
+
+/* crew page css start */
+
+.crew-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/crew-bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.crew-main {
+    & header {
+        margin-left: 166px;
+        margin-top: 76px;
+        display: flex;
+        gap: 28px;
+        color: #FFF;
+        font-family: 'Barlow Condensed';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.725px;
+        margin-bottom: 154px;
+    } & span {
+            color: #FFF;
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            font-weight: 700;
+            opacity: 0.25;
+    }
+}
+
+.crew-block {
+    display: flex;
+    gap: 82px;
+    & img {
+        position: absolute;
+        bottom: 0;
+        right: 150px;
+    }
+}
+
+.meetCrew {
+    width: 532px;
+    margin-left: 165px;
+    & h3 {
+        color: #FFF;
+        font-family: 'Bellefair';
+        opacity: 0.52;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    & h2 {
+        color: #FFF;
+        font-family: 'Bellefair';
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+    & p {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+        padding-right: 200px;
+        margin-bottom: 120px;
+    }
+}
+
+.crew-btns {
+    display: flex;
+    gap: 20px;
+
+    & button {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+}
+
+.active-button {
+    opacity: 1 !important;
+}
+
+/* crew page css end */
