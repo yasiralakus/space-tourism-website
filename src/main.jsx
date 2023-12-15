@@ -5,12 +5,14 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Destination from './pages/Destination.jsx'
 import Crew from './pages/Crew.jsx'
-
+import ErrorPage from './pages/ErrorPage.jsx'
+import Technology from './pages/Technology.jsx'
 
 const router = createBrowserRouter ( [
     {
         path: "/",
-        element: <App /> 
+        element: <App />,
+        errorElement: <ErrorPage />
     },
 
     {
@@ -23,10 +25,10 @@ const router = createBrowserRouter ( [
         element: <Crew /> 
     },
 
-    // {
-    //     path: "/technology",
-    //     element: <Technology /> 
-    // },
+    {
+        path: "/technology",
+        element: <Technology /> 
+    },
 
 
 ] )

@@ -322,3 +322,142 @@ li, summary { list-style: none;}
 }
 
 /* crew page css end */
+
+/* error page css start */
+
+.error-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-family: 'Barlow Condensed';
+    color: #fff;
+    & h1 {
+        font-size: 150px;
+    }
+    & h2 {
+        font-size: 60px;
+    }
+    & a {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        text-decoration: underline !important;
+    }
+    & p {
+        font-size: 50px;
+        font-weight: 600;
+
+    }
+}
+
+/* error page css end */
+
+/* technology page css start */
+
+.technology-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/technology-bg.jpg);
+    background-size: cover;
+}
+
+.technology-main {
+    & header {
+        margin-left: 166px;
+        margin-top: 76px;
+        display: flex;
+        gap: 28px;
+        color: #FFF;
+        font-family: 'Barlow Condensed';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.725px;
+        margin-bottom: 138px;
+    } & span {
+            color: #FFF;
+            font-family: 'Barlow Condensed';
+            font-size: 28px;
+            font-weight: 700;
+            opacity: 0.25;
+    }
+}
+
+.box-content {
+    display: flex;
+    gap: 80px;
+}
+
+.technology-box {
+    display: flex;
+    justify-content: space-between;
+    & img {
+        margin-top: -100px;
+    }
+}
+
+.content-text {
+    width: 470px;
+    & h4 {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        margin-bottom: 11px;
+    }
+    & h1 {
+        color: #FFF;
+        font-family: 'Bellefair';
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 17px;
+    }
+    & p {
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+    }
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: 165px;
+    & button {
+        width: 80px;
+        height: 80px;
+        background-color: transparent;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        font-family: 'Bellefair';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+.technoActiveBtn {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+/* technology page css end */
